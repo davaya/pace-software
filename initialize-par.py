@@ -9,7 +9,7 @@ SBOM_SOURCES = os.path.join('Data', 'sbom-examples.json')
 DEVICE_EXAMPLES = os.path.join('Data', 'device-examples.json')
 
 PAR_API = 'https://2uqxczz7pjhcbmzp3ncfehfbdu.appsync-api.us-east-1.amazonaws.com/graphql'
-PAR_AUTH = {'x-api-key': os.getenv('ParApiKey')}
+PAR_AUTH = {'x-api-key': 'da2-didhri6n5jcgnkwssg44szk5yq'}
 
 
 def init():
@@ -41,24 +41,21 @@ def sboms():
     print('Sboms')
 
 
-def list_devices():
-    result = client.execute(gql(
-        """
-        query ListDevices ($limit: Int) {
-            listDevices (limit: $limit) {
-                nextToken
-                items {
-                    id
-                }
-            }
-        }
-        """
-    ), variable_values={'limit': 2})
-    print(result)
+def list_devices(limit: int = 2) -> list:
+    items = []
+    while True:
+        result = client.execute(gql(f'query ListDevices {{listDevices (limit: {limit}) {{nextToken items{{id}} }} }}'))
+        items += result['listDevices']['items']
+        print('  ', result)
+        if not result['listDevices']['nextToken']:
+            break
+    print(len(items), items)
+    return items
 
 
 if __name__ == '__main__':
-    transport = AIOHTTPTransport(url=PAR_API, headers=PAR_AUTH)
+    par_auth = {'x-api-key': os.getenv('ParApiKey')} if os.getenv('ParApiKey') else PAR_AUTH
+    transport = AIOHTTPTransport(url=PAR_API, headers=par_auth)
     client = Client(transport=transport, fetch_schema_from_transport=True)
     fire.Fire({
         'init': init,
