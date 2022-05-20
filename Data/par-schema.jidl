@@ -1,0 +1,89 @@
+       title: "Posture Attribute Repository API"
+     package: "https://pace.org/par"
+ description: "This is a schema for the GraphQL PAR API, not an OpenC2 Actuator Profile"
+     exports: ["Device", "SBOM", "Device-SBOM-Mapping"]
+     comment: "Translate to equivalent GraphQL SDL (https://www.digitalocean.com/community/tutorials/graphql-graphql-sdl)"
+
+Device = Record{2..*}                             // Must have at least one field in addition to id
+   1 id               Key(String)                 // Primary key for Device table (@model)
+   2 kind             DeviceKind optional
+   3 manufacturer     String optional
+   4 model            String optional
+   5 serial           String optional
+   6 asset_id         String optional
+   7 attrs            PostureAttributes optional
+
+SBOM = Record
+   1 id               Key(String)                 // Primary key for SBOM table
+   2 sbom             SBOM-Info
+
+Device-SBOM-Mapping = Record                      // Bridge table for many-to-many relationship
+   1 device_id        Link(Device)
+   2 sbom_id          Link(SBOM)
+
+DeviceKind = Enumerated
+   1 PC
+   2 LAPTOP
+   3 TABLET
+   4 MOBILE
+   5 CAMERA
+
+PostureAttributes = Map{1..*}
+   1 os_version       OS-Version optional
+   2 password_min     Integer optional
+   3 file             File optional
+
+OS-Version = Record
+   1 name             String                      // Distribution or product name
+   2 version          String                      // Suitable for presentation OS version
+   3 major            Integer                     // Major release version
+   4 minor            Integer                     // Minor release version
+   5 patch            Integer                     // Patch release
+   6 build            String                      // Build-specific or variant string
+   7 platform         String                      // OS Platform or ID
+   8 platform_like    String                      // Closely-related platform
+   9 codename         String                      // OS Release codename
+  10 arch             OS-Arch                     // OS Architecture
+  11 install_date     Integer optional            // Install date of the OS (seconds)
+  12 pid_with_namespace String optional
+  13 mount_namespace_id String optional
+
+OS-Arch = Enumerated                              // Win: wmic os get osarchitecture, or Unix: uname -m
+   1 32-bit
+   2 64-bit
+   3 x86_32
+   4 x86_64
+
+FileSpecifiers = Map{1..*}
+   1 path             String optional
+
+File = Record
+   1 data             Binary
+
+SBOM-Info = Map{1..*}
+   1 uri              URI optional                // Unique identifier or locator of the SBOM
+   2 summary          SBOM-Elements optional      // NTIA Minimumum Elements of an SBOM
+   3 content          SBOM-Content optional       // SBOM structured data
+   4 blob             SBOM-Blob optional          // Uninterpreted SBOM bytes
+
+SBOM-Elements = Record
+   1 supplier         String [1..*]               // Name(s) of entity that creates, defines, and identifies components
+   2 component        String [1..*]               // Designation(s) assigned to a unit of software defined by the original supplier
+   3 version          String                      // Identifier used by supplier to specify a change from a previously identified version
+   4 component_ids    String [1..*]               // Other identifiers used to identify a component, or serve as a look-yp key
+   5 dependencies     String [1..*]               // Upstream component(s)
+   6 author           String                      // Name of the entity that creates SBOM data for this component
+   7 timestamp        DateTime                    // Record of the date and time of the SBOM data assembly
+
+SBOM-Content = Choice
+   1 cyclonedx        String                      // Placeholder for CycloneDX data model
+   2 spdx2            String                      // Placeholder for SPDX v2.x data model
+   3 spdx3            String                      // Placeholder for SPDX v3 data model
+
+SBOM-Blob = Record
+   1 format           Enumerated(Enum[SBOM-Content])
+   2 data             Binary
+
+DateTime = String{pattern="^((?:(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}:\d{2}(?:\.\d+)?))(Z|[\+-]\d{2}:\d{2})?)$"} // RFC-3339 format
+
+URI = String /uri
