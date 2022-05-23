@@ -87,15 +87,15 @@ def create_devices():
             else:
                 unknown_types.add(row['Type'])
     print(f'Creating {len(devs)} devices')
-    for n, dev in enumerate(devs[:25], start=1):    # Number of devices to create
-        attrs = {
+    for n, dev in enumerate(devs[:25], start=1):    # Limit number of devices to create for testing
+        info = {
             'kind': dev[0],
             'asset_id': dev[1],
             'manufacturer': dev[2],
             'model': dev[3],
         }
-        r = mutate_item('createDevice', 'CreateDeviceInput!', attrs)
-        print(n, attrs)
+        r = mutate_item('createDevice', 'CreateDeviceInput!', info)
+        print(n, info)
     if unknown_types:
         print(f'Unknown device types, ignored: {unknown_types}')
 
