@@ -1,0 +1,287 @@
+Conflicts,Default IP,Inventory ID,Location,Manufacturer,Model,Name,Owner,Source,Status,Tags,Type
+0,192.180.118.85,GEN-0017,America > LATAM > Argentina > Buenos Aires,"NETGEAR, Inc.",Nightawk R6700,AP NETGEAR,Aaron Costantino,Manual,Assigned,,AccessPoint
+0,192.243.176.21,GEN-0018,Europe > United Kingdom,"NETGEAR, Inc.",Nightawk R6700,AP NETGEAR,,Manual,Assigned,,AccessPoint
+0,192.56.101.204,GEN-0019,America > North America > Mexico,"NETGEAR, Inc.",Nightawk R6700,AP NETGEAR,Aaron Costantino,Manual,Assigned,"North America, Mexico",AccessPoint
+0,10.10.98.57,,Cloud > AWS,Amazon,Network Firewall,AWS Network Firewall,,InvGate Scan,New,,Firewall
+0,10.10.98.58,,Cloud > Azure,Microsoft,Azure Firewall,Azure Firewall,,InvGate Scan,New,,Firewall
+0,10.10.98.56,PRI-0004,America > LATAM > Argentina > Buenos Aires > Storage Room,Brother Industries Ltd.,DCP-L5600DN,BRN3C2AF438F3D7,,InvGate Scan,New,,Printer
+0,182.3.124.203,,America > North America > USA > Atlanta,Google,Dell Chromebook 3100 2-in-1,Chromebook,Laura Lord,InvGate Google Suite,Assigned,North America,Chromebook
+0,186.12.3.203,,America > North America > USA > Florida,Google,Lenovo 100e Chromebook,Chromebook,Neil Murray,InvGate Google Suite,Assigned,"VIP, North America",Chromebook
+0,181.3.65.250,,America > LATAM > Argentina > Mendoza,Google,Lenovo 100e Chromebook,Chromebook,William Marts,InvGate Google Suite,Assigned,,Chromebook
+0,183.176.115.152,,America > LATAM > Argentina > Buenos Aires > Datacenter,Google,ASUS Chromebook C523,Chromebook,Eric Almaguer,InvGate Google Suite,Assigned,,Chromebook
+0,181.50.131.123,,America > LATAM > Argentina > Mendoza,Google,ASUS Chromebook C523,Chromebook,Leonard Burdine,InvGate Google Suite,Assigned,,Chromebook
+0,185.123.154.83,,America > North America > USA > Florida,Google,Lenovo N23 Yoga Chromebook,Chromebook,Adrian Vandenberg,InvGate Google Suite,Assigned,North America,Chromebook
+0,178.126.43.130,,America > LATAM > Chile,Google,Lenovo N23 Yoga Chromebook,Chromebook,Stephanie Thomas,InvGate Google Suite,Assigned,,Chromebook
+0,180.211.180.22,,America > LATAM > Chile,Google,Lenovo N23 Yoga Chromebook,Chromebook,Lisa Capozzi,InvGate Google Suite,Assigned,,Chromebook
+0,192.168.7.107,COM-0000,America > LATAM > Argentina > Misiones,Asus,X555LAB,COM-0000,,Agent,Broken,"all-computers, windows",Computer
+0,192.168.0.64,COM-0001,,Dell,XPS 13 9343,COM-0001,Megan Ferguson,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.0.48,COM-0003,America > LATAM > Argentina > Buenos Aires > Storage Room,Apple,"MacBookPro10,1",COM-0003,Steven Mahoney,Agent,Assigned,all-computers,Computer
+0,192.168.9.125,COM-0004,America > LATAM > Chile,Dell,XPS 15 9550,COM-0004,Lisa Capozzi,Agent,Assigned,"all-computers, windows, Problematicos",Computer
+0,192.168.5.124,COM-0005,America,Amazon,t3.medium,COM-0005,Fernando Schultz,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.5.225,COM-0006,America > North America > USA > Florida,Dell,Inspiron 5577,COM-0006,Barbara Crawford,Agent,Broken,"all-computers, North America",Computer
+0,192.168.7.208,COM-0007,America > LATAM > Argentina > Buenos Aires > Storage Room,VMware,None,COM-0007,Emily DeGennaro,Agent,Assigned,"all-computers, virtual-machine, windows",Computer
+0,192.168.7.45,COM-0008,America > LATAM > Argentina,Xen,4.2.amazon,COM-0008,Erica Johnson,Agent,Assigned,"all-computers, virtual-machine, windows",Computer
+0,192.168.4.13,COM-0009,America > North America > USA > Atlanta,Dell,Inspiron 7559,COM-0009,Candace Stansell,Agent,Assigned,"all-computers, windows, North America",Computer
+1,192.168.3.112,COM-0010,America > LATAM > Argentina > Buenos Aires > Office,Dell,XPS 15 9550,COM-0010,Adrian Vandenberg,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.5.37,COM-0011,America > LATAM > Argentina > Mendoza,Dell,Inspiron 5577,COM-0011,Jessica Enlow,Agent,Assigned,"all-computers, windows, Problematicos",Computer
+0,192.168.5.30,COM-0012,America > North America > Mexico,Dell,Inspiron 5577,COM-0012,James Buswell,Agent,Assigned,"all-computers, VIP, windows, North America, Problematicos, Mexico",Computer
+0,192.168.4.179,COM-0013,America > LATAM > Argentina > Buenos Aires > Datacenter,Apple,"MacBookPro13,3",COM-0013,Aaron Costantino,Agent,Assigned,"all-computers, VIP",Computer
+0,192.168.9.139,COM-0014,America > North America > USA,Dell,Latitude 7389,COM-0014,Katherine Bryant,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.9.241,COM-0015,America > LATAM > Argentina > Mendoza,Dell,XPS 13 9360,COM-0015,Mary Gallagher,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.0.112,COM-0016,Europe > United Kingdom,Dell,Latitude 7280,COM-0016,Annette Mercier,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.1.95,COM-0017,America > LATAM > Chile,Dell,Latitude 7490,COM-0017,Gary Herrera,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.1.24,COM-0018,Europe > United Kingdom,VMware,None,COM-0018,Frank Livingston,Agent,Assigned,"all-computers, virtual-machine, windows",Computer
+0,192.168.8.252,COM-0019,America > LATAM > Argentina > Buenos Aires > Storage Room,VMware,None,COM-0019,Dora Thompson,Agent,Assigned,"all-computers, virtual-machine, windows",Computer
+0,192.168.3.86,COM-0020,America > North America > USA > Florida,Dell,Inspiron 5577,COM-0020,Sandy Edwards,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.8.122,COM-0021,America > LATAM > Colombia,Dell,Latitude 7490,COM-0021,Luz Santiago,Agent,Assigned,all-computers,Computer
+0,192.168.6.167,COM-0022,America > North America > USA > Atlanta,Dell,Latitude 7490,COM-0022,Candace Stansell,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.6.119,COM-0023,America > LATAM > Chile,Dell,Latitude 7280,COM-0023,Mathias Leatherman,Agent,Broken,"all-computers, windows",Computer
+0,192.168.6.128,COM-0024,America > LATAM > Argentina > Mendoza,Dell,Inspiron 15-5578,COM-0024,Jessica Enlow,Agent,Assigned,all-computers,Computer
+0,192.168.9.239,COM-0025,America > North America > USA,Dell,Inspiron 5577,COM-0025,David Coverdale,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.1.249,COM-0026,Europe > United Kingdom,Dell,Inspiron 15-5578,COM-0026,Vicki Walker,Agent,Broken,"all-computers, windows",Computer
+0,192.168.6.231,COM-0027,America > LATAM > Argentina > Buenos Aires,Lenovo,Y50-70,COM-0027,Harry Hightower,Agent,Assigned,"all-computers, VIP, windows",Computer
+0,192.168.5.158,COM-0028,America > LATAM > Argentina > Buenos Aires,Lenovo,ideapad FLEX 4-1580,COM-0028,Emily DeGennaro,Agent,Assigned,all-computers,Computer
+0,192.168.8.6,COM-0029,America > LATAM > Argentina > Buenos Aires > Datacenter,Asus,UX530UX,COM-0029,John Sykes,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.8.254,COM-0030,America > North America > USA > Florida,Dell,Latitude 7280,COM-0030,Joe Montalto,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.5.78,COM-0031,Europe,Dell,Inspiron 5577,COM-0031,Fernando Schultz,Agent,Assigned,"all-computers, windows",Computer
+1,192.168.3.74,COM-0032,America > LATAM > Argentina > Buenos Aires,Dell,Latitude 5491,COM-0032,Dora Thompson,Agent,Assigned,"all-computers, windows",Computer
+1,192.168.3.170,COM-0033,America > North America > Mexico,Dell,Latitude 7280,COM-0033,Lyndsay Corcoran,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.9.245,COM-0034,America > North America > USA,Dell,Latitude 7490,COM-0034,Jennifer Todd,Agent,Broken,"all-computers, windows, North America",Computer
+0,192.168.2.198,COM-0035,America > LATAM > Argentina > Buenos Aires > Office,Dell,XPS 13 9370,COM-0035,Harry Hightower,Agent,Assigned,"all-computers, windows, Problematicos",Computer
+0,192.168.3.93,COM-0036,America > North America > USA > Florida,Dell,XPS 13 9370,COM-0036,Neil Murray,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.2.183,COM-0037,America > North America > Mexico,Lenovo,Y50-70,COM-0037,James Buswell,Agent,Assigned,"all-computers, North America, Mexico",Computer
+0,192.168.6.27,COM-0038,Europe > United Kingdom,Dell,Inspiron 7559,COM-0038,Debora Moore,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.7.70,COM-0039,America > North America > USA > Florida,Apple,"MacBookPro15,2",COM-0039,Adrian Vandenberg,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.3.205,COM-0040,America > LATAM > Argentina > Buenos Aires > Office,Dell,Inspiron 5577,COM-0040,Michael Rhone,Agent,Assigned,"all-computers, windows",Computer
+1,192.168.8.85,COM-0041,America > LATAM > Colombia,Dell,XPS 15 9570,COM-0041,Jonathan Dyer,Agent,Assigned,all-computers,Computer
+0,192.168.9.171,COM-0042,Europe,Lenovo,ideapad FLEX 4-1580,COM-0042,Bruce Touchstone,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.2.174,COM-0043,America > LATAM > Colombia,Dell,Inspiron 5577,COM-0043,Carla Kramer,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.1.169,COM-0044,America > LATAM > Colombia,Dell,Inspiron 15-5578,COM-0044,Carla Kramer,Agent,Broken,"all-computers, windows",Computer
+0,192.168.8.156,COM-0045,America > North America > USA > Atlanta,Dell,Inspiron 5379,COM-0045,Regina Thorp,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.3.95,COM-0046,America > LATAM > Argentina > Buenos Aires > Office,Dell,Inspiron 5379,COM-0046,Scott Reeves,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.4.162,COM-0047,America > LATAM > Argentina,Dell,Inspiron 5577,COM-0047,Erica Johnson,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.6.3,COM-0048,Europe > United Kingdom,Dell,XPS 15 9550,COM-0048,Frank Livingston,Agent,Assigned,all-computers,Computer
+0,192.168.3.10,COM-0049,America > LATAM > Argentina > Mendoza,Dell,Latitude 7280,COM-0049,Leonard Burdine,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.0.8,COM-0050,America > North America > Mexico,Dell,Latitude 5491,COM-0050,Edward Crimmins,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+1,192.168.2.31,COM-0051,America > LATAM > Argentina > Misiones,Dell,XPS 15 9570,COM-0051,Eva Sloan,Agent,Assigned,all-computers,Computer
+0,192.168.6.255,COM-0052,America > LATAM > Chile,Dell,Latitude 5491,COM-0052,Angela Alfaro,Agent,Assigned,all-computers,Computer
+0,192.168.4.19,COM-0053,America > North America > USA > Atlanta,Dell,Inspiron 5577,COM-0053,Aaron Costantino,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.9.42,COM-0054,Europe > United Kingdom,Gigabyte Technology,Z390 M GAMING,COM-0054,Debora Moore,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.5.249,COM-0055,America > North America > USA > Florida,Apple,"MacBookPro11,3",COM-0055,Emma Owens,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.3.8,COM-0057,Europe > United Kingdom,Dell,Latitude 7389,COM-0057,Paula Kirk,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.8.157,COM-0058,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,Inspiron 7380,COM-0058,Ryan Farmer,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.6.52,COM-0059,America > North America > USA,Dell,Inspiron 7380,COM-0059,Florence Morrison,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.8.89,COM-0060,America > LATAM > Argentina > Buenos Aires > Storage Room,Dell,Inspiron 5577,COM-0060,Paul Costello,Agent,Assigned,"all-computers, windows",Computer
+1,192.168.6.91,COM-0061,America > North America > USA > Florida,Dell,Inspiron 5577,COM-0061,Barbara Crawford,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.8.80,COM-0062,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,XPS 13 9370,COM-0062,Chris Thompson,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.6.147,COM-0063,America > LATAM > Chile,Lenovo,Yoga S940-14IIL,COM-0063,Douglas Carter,Agent,Assigned,"all-computers, windows",Computer
+1,192.168.1.180,COM-0064,America > North America > Mexico,Dell,XPS 13 9360,COM-0064,Amanda Reyes,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.9.161,COM-0065,America > LATAM > Colombia,Dell,Inspiron 15-5578,COM-0065,Philip Wood,Agent,Assigned,all-computers,Computer
+0,192.168.5.83,COM-0066,America > LATAM > Argentina > Buenos Aires > Datacenter,Lenovo,ThinkPad X390,COM-0066,Ralph Long,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.6.147,COM-0068,America > LATAM > Argentina > Misiones,Dell,Inspiron 5577,COM-0068,Nancy Romero,Agent,Assigned,all-computers,Computer
+0,192.168.2.146,COM-0069,America > North America > Mexico,Dell,Latitude 7490,COM-0069,Rebecca Lepore,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.3.251,COM-0070,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,XPS 15 9570,COM-0070,Eric Almaguer,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.1.81,COM-0071,America > North America > USA > Atlanta,Apple,"MacBookPro11,2",COM-0071,Susan Soprano,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.6.99,COM-0072,America > LATAM > Colombia,Dell,Latitude 5490,COM-0072,Thomas Moreau,Agent,Assigned,"all-computers, VIP, windows",Computer
+0,192.168.0.138,COM-0073,America > North America > Mexico,Dell,Latitude 5490,COM-0073,Sophie McKinley,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.6.12,COM-0074,America > LATAM > Argentina > Buenos Aires > Datacenter,Lenovo,ThinkPad P53s,COM-0074,Terry Loyd,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.3.205,COM-0075,America > LATAM > Argentina > Buenos Aires,Dell,XPS 15 7590,COM-0075,Aaron Costantino,Agent,Assigned,all-computers,Computer
+0,192.168.3.140,COM-0076,America > North America > USA > Florida,Lenovo,V330-15IKB,COM-0076,Adrian Vandenberg,Agent,Assigned,"all-computers, windows, North America",Computer
+0,192.168.0.109,COM-0078,Europe > United Kingdom,Lenovo,ThinkPad E495,COM-0078,Annette Mercier,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.2.121,COM-0079,America > North America > Mexico,Dell,XPS 13 7390,COM-0079,Arturo Scott,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.9.193,COM-0080,America > North America > Mexico,Lenovo,ThinkPad E495,COM-0080,Arturo Scott,Agent,Assigned,"all-computers, windows, North America, Mexico",Computer
+0,192.168.4.220,COM-0101,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14,COM-0101,,Agent,New,all-computers,Computer
+0,192.168.5.204,COM-0102,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad T490,COM-0102,,Agent,New,"all-computers, windows",Computer
+0,192.168.0.14,COM-0103,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad T495s,COM-0103,,Agent,New,"all-computers, windows",Computer
+0,192.168.4.186,COM-0104,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad T495,COM-0104,,Agent,New,"all-computers, windows",Computer
+0,192.168.3.188,COM-0105,America > North America > USA > Atlanta,Lenovo,ThinkPad T495,COM-0105,,Agent,New,"all-computers, windows, North America",Computer
+0,192.168.2.21,COM-0106,Europe > United Kingdom,Lenovo,ThinkPad T495,COM-0106,Nicole Dandrea,Agent,Assigned,"all-computers, windows",Computer
+0,192.168.4.154,COM-0107,America > North America > USA > Atlanta,Lenovo,ThinkPad E14 Gen 2,COM-0107,,Agent,New,"all-computers, windows, North America",Computer
+0,192.168.3.146,COM-0108,America > North America > USA > Atlanta,Lenovo,ThinkPad T495,COM-0108,,Agent,New,"all-computers, windows, North America",Computer
+0,192.168.0.246,COM-0109,America > LATAM > Colombia,Apple,"Macmini6,1",COM-0109,,Agent,New,all-computers,Computer
+1,192.168.8.41,COM-0110,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14 Gen 2,COM-0110,,Agent,New,all-computers,Computer
+0,192.168.0.250,COM-0111,America > North America > Mexico,Lenovo,ThinkPad E14,COM-0111,Vivian Campbell,Agent,New,"all-computers, windows, North America, Mexico",Computer
+0,192.168.3.62,COM-0112,America > LATAM > Colombia,Lenovo,ThinkPad E14,COM-0112,,Agent,New,all-computers,Computer
+0,192.168.6.154,COM-0113,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14,COM-0113,,Agent,New,"all-computers, windows",Computer
+0,192.168.0.60,COM-0114,America > LATAM > Colombia,Lenovo,ThinkPad E14,COM-0114,,Agent,New,all-computers,Computer
+0,192.168.0.112,COM-0115,America > LATAM > Colombia,Lenovo,ThinkPad T495,COM-0115,,Agent,New,all-computers,Computer
+0,192.168.3.227,COM-0116,America > LATAM > Argentina > Mendoza,Lenovo,ThinkPad X1 Carbon Gen 8,COM-0116,,Agent,New,"all-computers, windows",Computer
+0,192.168.0.63,COM-0117,America > North America > USA,Lenovo,ThinkPad T495,COM-0117,David Coverdale,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.5.193,COM-0118,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14 Gen 2,COM-0118,,Agent,New,"all-computers, windows",Computer
+0,192.168.5.197,COM-0119,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14 Gen 2,COM-0119,Louis Briley,Agent,New,"all-computers, windows",Computer
+1,192.168.1.116,COM-0120,America > LATAM > Argentina > Mendoza,Lenovo,ThinkPad E14 Gen 2,COM-0120,,Agent,New,all-computers,Computer
+0,192.168.9.253,COM-0121,America > LATAM > Argentina > Mendoza,Lenovo,ThinkPad E14 Gen 2,COM-0121,,Agent,New,"all-computers, windows",Computer
+0,192.168.4.213,COM-0122,America > LATAM > Argentina > Mendoza,Lenovo,ThinkPad T495,COM-0122,,Agent,New,"all-computers, windows",Computer
+0,192.168.1.111,COM-0123,America > LATAM > Argentina > Mendoza,Apple,"MacBookAir10,1",COM-0123,,Agent,New,all-computers,Computer
+1,192.168.0.101,COM-0124,America > LATAM > Argentina > Misiones,Dell,XPS 13 9360,COM-0124,,Agent,New,"all-computers, windows",Computer
+0,192.168.4.218,COM-0125,America > LATAM > Argentina > Mendoza,Lenovo,ThinkPad T14 Gen 1,COM-0125,,Agent,New,all-computers,Computer
+0,192.168.0.137,COM-0126,America > LATAM > Argentina > Misiones,Dell,Latitude 7389,COM-0126,,Agent,New,"all-computers, windows",Computer
+0,192.168.7.88,COM-0127,America > LATAM > Argentina > Misiones,Dell,XPS 15 7590,COM-0127,,Agent,New,all-computers,Computer
+0,192.168.8.75,COM-0128,America > LATAM > Argentina > Misiones,Lenovo,ThinkPad E14,COM-0128,,Agent,New,"all-computers, windows",Computer
+0,192.168.0.26,COM-0129,America > LATAM > Colombia,Lenovo,ThinkPad E14,COM-0129,,Agent,New,"all-computers, windows",Computer
+0,192.168.1.185,COM-0131,America > North America > USA,Apple,"MacBookPro15,2",COM-0131,Jennifer Todd,Agent,Assigned,"all-computers, North America",Computer
+0,192.168.3.159,,,Xen,4.2.amazon,DEMOASSETS,,Agent,New,"all-computers, virtual-machine, windows",Computer
+0,,EC-0000,Cloud > AWS,Amazon,t3.micro,EC-0000,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0001,Cloud > AWS,Amazon,t3.small,EC-0001,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0002,Cloud > AWS,Amazon,c5.large,EC-0002,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0003,Cloud > AWS,Amazon,t3.micro,EC-0003,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0004,Cloud > AWS,Amazon,c5.large,EC-0004,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0005,Cloud > AWS,Amazon,c5.large,EC-0005,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0006,Cloud > AWS,Amazon,t3.micro,EC-0006,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0007,Cloud > AWS,Amazon,t3.small,EC-0007,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0008,Cloud > AWS,Amazon,t3.small,EC-0008,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0009,Cloud > AWS,Amazon,c5.xlarge,EC-0009,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0010,Cloud > AWS,Amazon,t3.micro,EC-0010,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0011,Cloud > AWS,Amazon,t3.micro,EC-0011,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0012,Cloud > AWS,Amazon,t3.micro,EC-0012,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0013,Cloud > AWS,Amazon,c5.large,EC-0013,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0014,Cloud > AWS,Amazon,c5.large,EC-0014,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0015,Cloud > AWS,Amazon,t3.large,EC-0015,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0016,Cloud > AWS,Amazon,t3.small,EC-0016,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0017,Cloud > AWS,Amazon,c5.large,EC-0017,,InvGate AWS Account,New,,EC2Instance
+0,,EC-0018,Cloud > AWS,Amazon,c5.large,EC-0018,,InvGate AWS Account,New,,EC2Instance
+0,,ST-01,America > LATAM > Argentina > Buenos Aires,Dell,Dell EMC Unity XT 880F,EMC Unity XT 880F,Tommy Cooper,Manual,Assigned,VIP,Data Storage
+0,,ST-02,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,Dell EMC Unity XT 880F,EMC Unity XT 880F,Susan Soprano,Manual,Assigned,,Data Storage
+0,10.15.186.95,,America > LATAM > Argentina > Buenos Aires,Fortinet,90D,FH3218SADD132,,InvGate Scan,New,,UTM
+0,192.168.1.255,INV-7144,America > LATAM > Argentina > Buenos Aires,Lorex,FXC22BKW,Front door camera,Paul Costello,Manual,Assigned,,IPCamera
+0,182.147.16.99,PHN-0001,America > North America > Mexico,Samsung,Galaxy S20 FE,Galaxy S20,,Agent,New,"all-phones, North America, Mexico",Phone
+0,182.227.224.208,PHN-0002,America > North America > Mexico,Samsung,Galaxy S20 FE,Galaxy S20,,Agent,New,"all-phones, North America, Mexico",Phone
+0,,GEN-0001,Europe > United Kingdom,Toshiba Corporation,DTB310,GEN-0001,Frank Livingston,Manual,Assigned,,External Hard Drive
+0,,GEN-0002,America > LATAM > Argentina > Buenos Aires > Storage Room,Western Digital,WDBUZG0010BBK,GEN-0002,,Manual,New,,External Hard Drive
+0,,GEN-0005,America > North America > USA > Florida,SONY,VPLHW45ES,GEN-0005,,Manual,New,North America,Projector
+0,,GEN-0006,Europe > United Kingdom,SONY,VPLHW45ES,GEN-0006,,Manual,New,,Projector
+0,,GEN-0007,America > North America > Mexico,SONY,VPLHW45ES,GEN-0007,,Manual,New,"North America, Mexico",Projector
+0,,GEN-0008,America > LATAM > Argentina > Buenos Aires > Office,SONY,VPLHW45ES,GEN-0008,,Manual,New,,Projector
+0,,GEN-0009,America > LATAM > Chile,SONY,VPLHW45ES,GEN-0009,,Manual,New,,Projector
+0,,GEN-0015,America > LATAM > Argentina > Buenos Aires,Logitech,BCC950,GEN-0015,,Manual,New,,Videoconference
+0,,GEN-0016,America > LATAM > Argentina > Buenos Aires,Logitech,BCC950,GEN-0016,,Manual,New,,Videoconference
+0,182.2.127.231,INV-7248,America > LATAM > Argentina > Misiones,Google,Chromebook 7.1,Guest Chromebook,Nancy Romero,InvGate Google Suite,Assigned,,Chromebook
+0,10.10.99.182,PRI-0003,America > North America > Mexico,Hewlett-Packard,Color LaserJet 2600n,HP Color LaserJet 2600n,Edward Crimmins,InvGate Scan,Assigned,"VIP, North America, Mexico",Printer
+0,,HS-0001,America > LATAM > Argentina > Buenos Aires > Datacenter,Logitech,H390,HS-0001,Aaron Costantino,Manual,Assigned,,Headset
+0,,HS-0002,America > North America > USA > Florida,Logitech,H390,HS-0002,Adrian Vandenberg,Manual,New,North America,Headset
+0,,HS-0003,America > North America > Mexico,Logitech,H390,HS-0003,Amanda Reyes,Manual,Assigned,"North America, Mexico",Headset
+0,,HS-0004,America > LATAM > Chile,Logitech,H390,HS-0004,Angela Alfaro,Manual,Assigned,,Headset
+0,,HS-0006,America > LATAM > Argentina > Buenos Aires > Storage Room,Logitech,H390,HS-0006,,Manual,Broken,,Headset
+0,,HS-0007,Europe > United Kingdom,Logitech,H390,HS-0007,Annette Mercier,Manual,Assigned,,Headset
+0,,HS-0008,America > North America > Mexico,Logitech,H390,HS-0008,Arturo Scott,Manual,Assigned,"North America, Mexico",Headset
+0,,HS-0009,America > North America > USA > Florida,Logitech,H390,HS-0009,Barbara Crawford,Manual,Assigned,North America,Headset
+0,,HS-0010,Europe,Logitech,H390,HS-0010,Bruce Touchstone,Manual,Assigned,,Headset
+0,,HS-0011,America > North America > USA > Atlanta,Logitech,H390,HS-0011,Candace Stansell,Manual,Assigned,North America,Headset
+0,,HS-0012,America > LATAM > Colombia,Logitech,H390,HS-0012,Carla Kramer,Manual,Assigned,,Headset
+0,,HS-0015,America > LATAM > Argentina > Buenos Aires > Datacenter,Logitech,H390,HS-0015,Chris Thompson,Manual,Assigned,,Headset
+0,,HS-0018,America > North America > USA,Logitech,H390,HS-0018,David Coverdale,Manual,Assigned,North America,Headset
+0,,HS-0020,Europe > United Kingdom,Logitech,H390,HS-0020,Debora Moore,Manual,Assigned,,Headset
+0,,HS-0021,America > LATAM > Argentina > Buenos Aires > Office,Logitech,H390,HS-0021,Dora Thompson,Manual,Assigned,,Headset
+0,,HS-0023,America > LATAM > Argentina > Buenos Aires > Storage Room,Logitech,H390,HS-0023,,Manual,Broken,,Headset
+0,,HS-0024,America > LATAM > Chile,Logitech,H390,HS-0024,Douglas Carter,Manual,Assigned,,Headset
+0,,HS-0026,America > North America > Mexico,Logitech,H390,HS-0026,Edward Crimmins,Manual,Assigned,"North America, Mexico",Headset
+0,,HS-0027,America > LATAM > Argentina > Buenos Aires,Logitech,H390,HS-0027,Emily DeGennaro,Manual,Assigned,,Headset
+0,,HS-0028,America > North America > USA > Florida,Logitech,H390,HS-0028,Emma Owens,Manual,Assigned,North America,Headset
+0,,HS-0029,America > LATAM > Argentina > Buenos Aires > Datacenter,Logitech,H390,HS-0029,Eric Almaguer,Manual,Assigned,,Headset
+0,,HS-0030,America > LATAM > Argentina,Logitech,H800,HS-0030,Erica Johnson,Manual,Assigned,,Headset
+0,,HS-0031,America > LATAM > Argentina > Misiones,Logitech,H390,HS-0031,Eva Sloan,Manual,Assigned,,Headset
+0,,HS-0032,Europe,Logitech,H390,HS-0032,Fernando Schultz,Manual,Assigned,,Headset
+0,,HS-0033,America > North America > USA,Logitech,H390,HS-0033,Florence Morrison,Manual,Assigned,North America,Headset
+0,,HS-0034,Europe > United Kingdom,Logitech,H390,HS-0034,Frank Livingston,Manual,Assigned,,Headset
+0,,HS-0035,America > LATAM > Chile,Logitech,H390,HS-0035,Gary Herrera,Manual,Assigned,,Headset
+0,,HS-0036,America > LATAM > Argentina > Buenos Aires,Logitech,H390,HS-0036,Harry Hightower,Manual,Assigned,,Headset
+0,,HS-0037,America > LATAM > Argentina > Buenos Aires,Logitech,H390,HS-0037,Helen Dillard,Manual,Assigned,,Headset
+0,,HS-0038,America > North America > Mexico,Logitech,H390,HS-0038,James Buswell,Manual,Assigned,"North America, Mexico",Headset
+0,,HS-0039,America > North America > USA,Logitech,H390,HS-0039,Jennifer Todd,Manual,Assigned,North America,Headset
+0,,HS-0040,America > LATAM > Argentina > Mendoza,Logitech,H390,HS-0040,Jessica Enlow,Manual,Assigned,,Headset
+0,,HS-0041,America > North America > USA > Florida,Logitech,H390,HS-0041,Joe Montalto,Manual,Assigned,North America,Headset
+0,,HS-0042,America > LATAM > Argentina > Buenos Aires > Office,Logitech,H390,HS-0042,John Sykes,Manual,Assigned,,Headset
+0,,HS-0049,America > LATAM > Colombia,Logitech,H390,HS-0049,Jonathan Dyer,Manual,Assigned,,Headset
+0,,HS-0055,America > North America > USA,Logitech,H390,HS-0055,Katherine Bryant,Manual,Assigned,North America,Headset
+0,,HS-0056,America > North America > USA > Atlanta,Logitech,H390,HS-0056,Laura Lord,Manual,Assigned,North America,Headset
+0,,HS-0057,America > LATAM > Argentina > Mendoza,Logitech,H390,HS-0057,Leonard Burdine,Manual,Assigned,,Headset
+0,,HS-0060,America > LATAM > Chile,Logitech,H390,HS-0060,Lisa Capozzi,Manual,Assigned,,Headset
+0,,HS-0061,America > LATAM > Argentina > Misiones,Logitech,H390,HS-0061,Louis Briley,Manual,Assigned,,Headset
+0,,4540 7300 1523 8776,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8777,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8778,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8779,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8780,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8781,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8782,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8783,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8784,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8785,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8786,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8787,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8788,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8789,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,,4540 7300 1523 8790,America > North America > USA > Florida,HSBC,Visa,HSBC Visa Credit Card,,Manual,New,North America,Credit card
+0,182.207.36.83,PHN-0003,America > North America > Mexico,Huawei,Ascend G620s,HUAWEI G620,,Agent,New,"all-phones, North America, Mexico",Phone
+0,,,Cloud > Azure,Microsoft,Standard_E2s_v3,Insight-BI-Server,,InvGate Azure Account,New,,AzureVMInstance
+0,185.181.89.84,PHN-0004,America > LATAM > Colombia,Apple,IPhone XS,INV-004001,Jonathan Dyer,Manual,Assigned,"VIP, all-phones",Phone
+0,183.202.142.227,PHN-0005,America > North America > Mexico,Apple,iPhone 12,iPhone 12,,Agent,New,"all-phones, North America, Mexico",Phone
+0,184.121.245.160,PHN-0006,America > North America > Mexico,Apple,iPhone 12,iPhone 12,,Agent,New,"all-phones, North America, Mexico",Phone
+0,182.63.211.27,PHN-0007,America > North America > USA,Apple,iPhone 12 mini,iPhone 12 mini,Katherine Bryant,Agent,Assigned,"all-phones, North America",Phone
+0,184.41.159.119,PHN-0008,America > North America > Mexico,Apple,iPhone 7,iPhone 7,,Agent,New,"all-phones, North America, Mexico",Phone
+0,,GEN-0004,America > LATAM > Argentina > Buenos Aires > Storage Room,Apple,Touch,iPod touch,,Manual,Broken,,Streaming Media Device
+0,,GEN-0020,America > North America > USA > Atlanta,Logitech,K835,Keyboard,Susan Soprano,Manual,Assigned,,Keyboard
+0,192.168.7.1,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-2R4N7VFA,,Agent,New,"all-computers, windows",Computer
+0,192.168.9.179,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-56DN03HP,,Agent,New,"all-computers, windows",Computer
+0,192.168.5.238,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-5L1M9TRP,,Agent,New,"all-computers, windows",Computer
+0,192.168.4.236,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-7MQ5FK8S,,Agent,New,"all-computers, windows",Computer
+0,192.168.8.66,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-B6J3QJ7F,,Agent,New,"all-computers, windows",Computer
+0,192.168.7.102,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-D9HVHQOK,,Agent,New,"all-computers, windows",Computer
+0,192.168.8.236,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-HQ3GJVKU,,Agent,New,"all-computers, windows",Computer
+0,192.168.1.55,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-MGV87UQP,,Agent,New,"all-computers, windows",Computer
+0,192.168.8.191,,,Lenovo,ThinkPad L14 Gen 2,LAPTOP-PI5O7LES,,Agent,New,"all-computers, windows",Computer
+0,,MON-0001,America > LATAM > Colombia,LG Electronics,23MP57HQ-P,MON-0001,Luz Santiago,Manual,Assigned,,Monitor
+0,,MON-0003,America > North America > Mexico,LG Electronics,24MP48HQ-P,MON-0003,Lyndsay Corcoran,Manual,Assigned,"North America, Mexico",Monitor
+0,,MON-0004,America > LATAM > Argentina > Mendoza,Samsung,S24F350FHL,MON-0004,Mary Gallagher,Manual,Assigned,,Monitor
+0,,MON-0005,America > LATAM > Chile,Samsung,2043NWX,MON-0005,Stephanie Thomas,Manual,Assigned,,Monitor
+0,,MON-0006,America > LATAM > Chile,Samsung,2043NWX,MON-0006,Mathias Leatherman,Manual,Assigned,,Monitor
+0,,MON-0007,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,DELL U2711,MON-0007,Steven Mahoney,Manual,Assigned,,Monitor
+0,,MON-0008,Europe > United Kingdom,LG Electronics,23MP55,MON-0008,Megan Ferguson,Manual,Assigned,,Monitor
+0,,MON-0009,America > LATAM > Argentina > Buenos Aires > Office,LG Electronics,23MP55,MON-0009,Michael Rhone,Manual,Assigned,,Monitor
+0,,MON-0010,America > LATAM > Argentina > Misiones,LG Electronics,23MP55,MON-0010,Nancy Romero,Manual,Assigned,,Monitor
+0,,MON-0011,America > North America > USA > Atlanta,Dell,2007WFP,MON-0011,Susan Soprano,Manual,Assigned,North America,Monitor
+0,,MON-0012,America > North America > USA > Florida,LG Electronics,23MP57HQ-P,MON-0012,Neil Murray,Manual,Assigned,North America,Monitor
+0,,MON-0013,America > LATAM > Argentina > Buenos Aires > Datacenter,Dell,2007WFP,MON-0013,Terry Loyd,Manual,Assigned,,Monitor
+0,,MON-0014,Europe > United Kingdom,LG Electronics,23MP57HQ-P,MON-0014,Nicole Dandrea,Manual,Assigned,,Monitor
+0,,MON-0015,America > LATAM > Argentina > Buenos Aires > Office,LG Electronics,24MP48HQ-P,MON-0015,Paul Costello,Manual,Assigned,,Monitor
+0,,MON-0016,Europe > United Kingdom,LG Electronics,24MP48HQ-P,MON-0016,Paula Kirk,Manual,Assigned,,Monitor
+0,,MON-0017,America > LATAM > Colombia,LG Electronics,24MP48HQ-P,MON-0017,Philip Wood,Manual,Assigned,,Monitor
+0,,MON-0018,America > LATAM > Argentina > Buenos Aires,LG Electronics,24MP48HQ-P,MON-0018,Ralph Long,Manual,Assigned,,Monitor
+0,,MON-0019,America > North America > Mexico,LG Electronics,24MP48HQ-P,MON-0019,Rebecca Lepore,Manual,Assigned,"North America, Mexico",Monitor
+0,,MON-0020,America > North America > USA > Atlanta,LG Electronics,24MP48HQ-P,MON-0020,Regina Thorp,Manual,Assigned,North America,Monitor
+0,,MON-0021,America > LATAM > Argentina > Buenos Aires,LG Electronics,24MP48HQ-P,MON-0021,Ryan Farmer,Manual,Assigned,,Monitor
+0,,MON-0022,America > North America > USA > Florida,LG Electronics,24MP60VQ-P,MON-0022,Sandy Edwards,Manual,Assigned,North America,Monitor
+0,,MON-0024,America > LATAM > Argentina > Buenos Aires > Storage Room,LG Electronics,29WK500,MON-0024,Scott Reeves,Manual,Assigned,,Monitor
+0,,MON-0025,America > North America > Mexico,Samsung,CM19WS,MON-0025,Sophie McKinley,Manual,Assigned,"North America, Mexico",Monitor
+0,,MON-0026,America > LATAM > Colombia,LG Electronics,24MP60VQ-P,MON-0026,Thomas Moreau,Manual,Assigned,,Monitor
+0,,MON-0027,America > LATAM > Argentina > Buenos Aires,LG Electronics,24MP60VQ-P,MON-0027,Aaron Costantino,Manual,Assigned,,Monitor
+0,,MON-0028,America > North America > USA > Florida,Samsung,T260N,MON-0028,Adrian Vandenberg,Manual,Assigned,North America,Monitor
+0,,MON-0030,America > North America > Mexico,Samsung,T260N,MON-0030,Amanda Reyes,Manual,Assigned,"North America, Mexico",Monitor
+0,,MON-0031,America > LATAM > Chile,LG Electronics,24MP48HQ-P,MON-0031,Angela Alfaro,Manual,Assigned,,Monitor
+0,,MON-0032,Europe > United Kingdom,LG Electronics,24MP60VQ-P,MON-0032,Annette Mercier,Manual,Assigned,,Monitor
+0,,MON-0033,America > North America > Mexico,LG Electronics,24MP48HQ-P,MON-0033,Arturo Scott,Manual,Assigned,"North America, Mexico",Monitor
+0,,MON-0034,America > North America > USA > Florida,LG Electronics,24MP48HQ-P,MON-0034,Barbara Crawford,Manual,Assigned,North America,Monitor
+0,,MON-0035,Europe,LG Electronics,24MP48HQ-P,MON-0035,Bruce Touchstone,Manual,Assigned,,Monitor
+0,,MON-0037,America > North America > USA > Atlanta,Samsung,S24F350FHL,MON-0037,Candace Stansell,Manual,Assigned,North America,Monitor
+0,,MON-0038,America > LATAM > Colombia,Samsung,S24F350FHL,MON-0038,Carla Kramer,Manual,Assigned,,Monitor
+0,,MON-0039,America > LATAM > Argentina > Buenos Aires > Datacenter,Samsung,S24F350FHL,MON-0039,Chris Thompson,Manual,Assigned,,Monitor
+0,,MON-0040,America > North America > USA,Samsung,24MP60VQ,MON-0040,David Coverdale,Manual,Assigned,North America,Monitor
+0,,MON-0041,Europe > United Kingdom,Samsung,24MP60VQ,MON-0041,Debora Moore,Manual,Assigned,,Monitor
+0,184.138.250.113,PHN-0009,America > LATAM > Argentina > Buenos Aires,Motorola,Edge,Motorola Edge,,Agent,New,all-phones,Phone
+0,,INV-7200,America > North America > Mexico,Google,Chromecast 2,Office Chromecast,Vivian Campbell,Manual,Assigned,"North America, Mexico",Streaming Media Device
+0,,PRI-0001,America > LATAM > Argentina > Buenos Aires > Office,Brother Industries Ltd.,QL-800,PRI-0001,Dora Thompson,Manual,Assigned,,Printer
+0,,PRI-0002,America > LATAM > Chile,Brother Industries Ltd.,QL-800,PRI-0002,Douglas Carter,Manual,Assigned,,Printer
+0,,,Cloud > Azure,Microsoft,Basic_A0,Production VM,,InvGate Azure Account,New,,AzureVMInstance
+0,,CHR-0504,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,,Manual,New,,Chair
+0,,CHR-0505,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,,Manual,New,,Chair
+0,,CHR-0506,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,,Manual,New,,Chair
+0,,CHR-0507,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,,Manual,New,,Chair
+0,,CHR-0508,Europe > United Kingdom,Steelcase,Gesture,Steelcase Gesture Chair,Debora Moore,Manual,Assigned,,Chair
+0,,CHR-0509,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,Dora Thompson,Manual,Assigned,,Chair
+0,,CHR-0510,America > LATAM > Argentina > Buenos Aires > Office,Steelcase,Gesture,Steelcase Gesture Chair,Emily DeGennaro,Manual,Assigned,,Chair
+0,10.10.98.24,,America > LATAM > Colombia,Motorola,SB6121,Surfboard Motorola,,InvGate Scan,New,,Router
+0,10.10.98.32,,America > North America > USA > Florida,Motorola,SB6121,Surfboard Motorola,,InvGate Scan,New,North America,Router
+0,10.15.156.38,,America > LATAM > Argentina > Buenos Aires,3Com,2924-SFP Plus,Switch 3Com,,InvGate Scan,New,,Switch
+0,,,Cloud > Azure,Microsoft,Standard_B1s,Ubuntu Test VM,,InvGate Azure Account,New,,AzureVMInstance
+0,,,Cloud > Azure,Microsoft,Standard_B1s,Ubuntu VM,,InvGate Azure Account,New,,AzureVMInstance
+0,,,Cloud > Azure,Microsoft,Standard_B1ms,Windows VM,,InvGate Azure Account,New,windows,AzureVMInstance

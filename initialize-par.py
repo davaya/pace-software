@@ -1,5 +1,6 @@
 import urllib.error
 
+import csv
 import fire
 import jadn
 import json
@@ -10,7 +11,7 @@ from gql.transport.aiohttp import AIOHTTPTransport
 
 
 SBOM_SOURCES = os.path.join('Data', 'sbom-examples.json')
-DEVICE_EXAMPLES = os.path.join('Data', 'device-examples.json')
+DEVICE_EXAMPLES = os.path.join('Data', 'InvGate-Insight-Explorer-Assets-20220523_120324.csv')
 
 PAR_API = 'https://2uqxczz7pjhcbmzp3ncfehfbdu.appsync-api.us-east-1.amazonaws.com/graphql'
 PAR_AUTH = {'x-api-key': 'da2-didhri6n5jcgnkwssg44szk5yq'}
@@ -42,9 +43,11 @@ def create_devices():
     """
     Create some example Devices
     """
-    with open(DEVICE_EXAMPLES) as fp:
-        devices = json.load(fp)
-    print(f'Creating {len(devices)} devices')
+    with open(DEVICE_EXAMPLES, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for n, row in enumerate(reader, start=1):
+            print(f' {n:>4} {row["Inventory ID"]:>20} {row["Manufacturer"]:>20} {row["Model"]:>30} {row["Name"]:>20} {row["Type"]:>12}')
+    print(f'Creating {n} devices')
 
 
 def create_sboms():
