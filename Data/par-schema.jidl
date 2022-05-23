@@ -22,11 +22,26 @@ Device-SBOM-Mapping = Record                      // Bridge table for many-to-ma
    2 sbom_id          Link(SBOM)
 
 DeviceKind = Enumerated
-   1 PC
-   2 LAPTOP
-   3 TABLET
-   4 MOBILE
-   5 CAMERA
+   1 Computer
+   2 Laptop
+   3 Tablet
+   4 Chromebook
+   5 Phone
+   6 Camera
+   7 AccessPoint
+   8 DataStorage
+   9 Firewall
+  10 HardDrive
+  11 Headset
+  12 Keyboard
+  13 Monitor
+  14 Printer
+  15 Projector
+  16 Router
+  17 Switch
+  18 StreamingMediaDevice
+  19 Videoconference
+  20 VirtualMachine
 
 PostureAttributes = Map{1..*}
    1 os_version       OS-Version optional

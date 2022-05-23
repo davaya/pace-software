@@ -33,21 +33,71 @@ def clear_all():
     devs = list_items(item_type='listDevices', limit=1000)
     boms = list_items(item_type='listSBOMS', limit=1000)
     print(f'Deleting {len(devs)} Devices and {len(boms)} SBOMs')
-    for item in boms:
+    for item in devs:
         r = mutate_item('deleteDevice', 'DeleteDeviceInput!', {'id': item['id']})
     for item in boms:
         r = mutate_item('deleteSBOM', 'DeleteSBOMInput!', {'id': item['id']})
+
+
+def normalize_device_type(in_type: str) -> str:
+    dtype = {
+            'accesspoint':  'AccessPoint',
+            'camera':       'Camera',
+            'ipcamera':     'Camera',
+            'chromebook':   'Chromebook',
+            'computer':     'Computer',
+            'pc':           'Computer',
+            'datastorage':  'DataStorage',
+            'firewall':     'Firewall',
+            'externalharddrive': 'HardDrive',
+            'headset':      'Headset',
+            'keyboard':     'Keyboard',
+            'laptop':       'Laptop',
+            'monitor':      'Monitor',
+            'phone':        'Phone',
+            'printer':      'Printer',
+            'projector':    'Projector',
+            'router':       'Router',
+            'switch':       'Switch',
+            'streamingmediadevice': 'StreamingMediaDevice',
+            'tablet':       'Tablet',
+            'videoconference': 'Videoconference',
+            'azurevminstance': 'VirtualMachine',
+            'ec2instance':  'VirtualMachine'
+        }
+    try:
+        return dtype[in_type.lower().replace(' ', '')]
+    except KeyError:
+        return ''
 
 
 def create_devices():
     """
     Create some example Devices
     """
+    unknown_types = set()
+    devs = []
     with open(DEVICE_EXAMPLES, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for n, row in enumerate(reader, start=1):
-            print(f' {n:>4} {row["Inventory ID"]:>20} {row["Manufacturer"]:>20} {row["Model"]:>30} {row["Name"]:>20} {row["Type"]:>12}')
-    print(f'Creating {n} devices')
+            dev_type = normalize_device_type(row['Type'])
+            if dev_type:
+                print(f'  {n:>4} {row["Type"]:>12} {row["Inventory ID"]:>20} {row["Manufacturer"]:>20} {row["Model"]:>30} {row["Name"]:>20}')
+                devs.append([dev_type, row['Inventory ID'], row['Manufacturer'], row['Model']])
+            else:
+                unknown_types.add(row['Type'])
+    print(f'Creating {len(devs)} devices')
+    for n, dev in enumerate(devs[:25], start=1):    # Number of devices to create
+        attrs = {
+            'kind': dev[0],
+            'asset_id': dev[1],
+            'manufacturer': dev[2],
+            'model': dev[3],
+        }
+        r = mutate_item('createDevice', 'CreateDeviceInput!', attrs)
+        print(n, attrs)
+    if unknown_types:
+        print(f'Unknown device types, ignored: {unknown_types}')
 
 
 def create_sboms():
@@ -88,7 +138,6 @@ def list_items(item_type: str, limit: int) -> list:
             query ListItems ($nextToken: String, $limit: Int) {
                 $$1 (nextToken: $nextToken, limit: $limit) {
                     nextToken
-                    count
                     items {
                         id
                     }

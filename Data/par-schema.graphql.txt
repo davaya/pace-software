@@ -18,11 +18,26 @@ type SBOM @model {
 }
 
 enum DeviceKind {
-  PC
-  LAPTOP
-  TABLET
-  MOBILE
-  CAMERA
+  Computer
+  Laptop
+  Tablet
+  Chromebook
+  Phone
+  Camera
+  AccessPoint
+  DataStorage
+  Firewall
+  HardDrive
+  Headset
+  Keyboard
+  Monitor
+  Printer
+  Projector
+  Router
+  Switch
+  StreamingMediaDevice
+  Videoconference
+  VirtualMachine
 }
 
 type PostureAttributes {
