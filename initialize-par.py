@@ -5,6 +5,7 @@ import fire
 import jadn
 import json
 import os
+import random
 import requests
 from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
@@ -22,8 +23,9 @@ def init():
     Delete everything, then create SBOMs and Devices
     """
     clear_all()
-    create_devices()
-    create_sboms()
+    devs = create_devices()
+    sboms = create_sboms()
+    create_join_table(devs, sboms)
 
 
 def clear_all():
@@ -71,12 +73,13 @@ def normalize_device_type(in_type: str) -> str:
         return ''
 
 
-def create_devices():
+def create_devices() -> list[str]:
     """
     Create some example Devices
     """
     unknown_types = set()
     devs = []
+    ids = []
     with open(DEVICE_EXAMPLES, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for n, row in enumerate(reader, start=1):
@@ -94,16 +97,18 @@ def create_devices():
             'manufacturer': dev[2],
             'model': dev[3],
         }
-        r = mutate_item('createDevice', 'CreateDeviceInput!', info)
+        ids.append(mutate_item('createDevice', 'CreateDeviceInput!', info)['id'])
         print(n, info)
     if unknown_types:
         print(f'Unknown device types, ignored: {unknown_types}')
+    return ids
 
 
-def create_sboms():
+def create_sboms() -> list[str]:
     """
     Create SBOMs from OSER list
     """
+    ids = []
     with open(SBOM_SOURCES) as fp:
         sbom_uris = json.load(fp)
     print(f'Creating {len(sbom_uris)} SBOMs')
@@ -111,8 +116,19 @@ def create_sboms():
         response = requests.get(fn)
         data = response.content.decode()
         print(f'{n:>4} data:', fn, len(data))
-        r = mutate_item('createSBOM', 'CreateSBOMInput!', {'sbom': {'uri': fn}})
-        print(r)
+        ids.append(mutate_item('createSBOM', 'CreateSBOMInput!', {'sbom': {'uri': fn}})['id'])
+    return ids
+
+
+def create_join_table(devs: list[str], sboms: list[str]):
+    """
+    Create Devices-to-SBOMs bridge table
+    """
+    count = random.choices([0, 1, 2, 3], weights=[4, 3, 2, 1], k=len(devs))
+    for dev in devs:
+        for n in range(count.pop()):
+            sbom = random.choice(sboms)
+            print(dev, n, sbom)
 
 
 def mutate_item(item_type: str, input_type: str, input_data: dict) -> dict:
