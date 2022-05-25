@@ -1,5 +1,3 @@
-import urllib.error
-
 import csv
 import fire
 import jadn
@@ -10,22 +8,23 @@ import requests
 from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
 
-
 SBOM_SOURCES = os.path.join('Data', 'sbom-examples.json')
 DEVICE_EXAMPLES = os.path.join('Data', 'InvGate-Insight-Explorer-Assets-20220523_120324.csv')
-
 PAR_API = 'https://2uqxczz7pjhcbmzp3ncfehfbdu.appsync-api.us-east-1.amazonaws.com/graphql'
 PAR_AUTH = {'x-api-key': 'da2-didhri6n5jcgnkwssg44szk5yq'}
 
+command_cache = {}
 
-def init():
+
+def init() -> dict:
     """
     Delete everything, then create SBOMs and Devices
     """
     clear_all()
     devs = create_devices()
     sboms = create_sboms()
-    create_join_table(devs, sboms)
+    joins = create_join_table(devs, sboms)
+    return {'devs': devs, 'sboms': sboms, 'joins': joins}
 
 
 def clear_all():
@@ -34,11 +33,14 @@ def clear_all():
     """
     devs = list_items(item_type='listDevices', limit=1000)
     boms = list_items(item_type='listSBOMS', limit=1000)
-    print(f'Deleting {len(devs)} Devices and {len(boms)} SBOMs')
+    joins = list_items(item_type='listDeviceSboms', limit=1000)
+    print(f'Deleting {len(devs)} Devices, {len(boms)} SBOMs, and {len(joins)} joins')
     for item in devs:
         r = mutate_item('deleteDevice', 'DeleteDeviceInput!', {'id': item['id']})
     for item in boms:
         r = mutate_item('deleteSBOM', 'DeleteSBOMInput!', {'id': item['id']})
+    for item in joins:
+        r = mutate_item('deleteDeviceSboms', 'DeleteDeviceSbomsInput!', {'id': item['id']})
 
 
 def normalize_device_type(in_type: str) -> str:
@@ -120,47 +122,62 @@ def create_sboms() -> list[str]:
     return ids
 
 
-def create_join_table(devs: list[str], sboms: list[str]):
+def create_join_table(devs: list[str], sboms: list[str]) -> list[str]:
     """
-    Create Devices-to-SBOMs bridge table
+    Create Devices-to-SBOMs join table
     """
+    ids = []
     count = random.choices([0, 1, 2, 3], weights=[4, 3, 2, 1], k=len(devs))
     for dev in devs:
         for n in range(count.pop()):
             sbom = random.choice(sboms)
-            print(dev, n, sbom)
+            print(dev, n+1, sbom)
+            ids.append(mutate_item('createDeviceSboms', 'CreateDeviceSbomsInput!', {'deviceID': dev, 'sBOMID': sbom}))
+    return ids
+
+
+def get_item(item_type: str, input_data: dict) -> dict:
+    cmd = gql(
+        """
+        query QueryItem ($input_data: ID!) {
+            $$1 (input: $input_data) {
+                id
+            }
+        }
+        """.replace('$$1', item_type))
+    result = client.execute(cmd, variable_values={'input_data': input_data})
+    return result[item_type]
 
 
 def mutate_item(item_type: str, input_type: str, input_data: dict) -> dict:
-    # TODO: Cache compiled commands
-    result = client.execute(gql(
+    cmd = gql(
         """
         mutation MutateItem ($input_data: $$2) {
             $$1 (input: $input_data) {
                 id
             }
         }
-        """.replace('$$1', item_type).replace('$$2', input_type)
-    ), variable_values={'input_data': input_data})
+        """.replace('$$1', item_type).replace('$$2', input_type))
+    result = client.execute(cmd, variable_values={'input_data': input_data})
     return result[item_type]
 
 
-def list_items(item_type: str, limit: int) -> list:
+def list_items(item_type: str, limit: int) -> list[dict]:
     items = []
     next_token = None
-    while True:
-        result = client.execute(gql(
-            """
-            query ListItems ($nextToken: String, $limit: Int) {
-                $$1 (nextToken: $nextToken, limit: $limit) {
-                    nextToken
-                    items {
-                        id
-                    }
+    cmd = gql(
+        """
+        query ListItems ($nextToken: String, $limit: Int) {
+            $$1 (nextToken: $nextToken, limit: $limit) {
+                nextToken
+                items {
+                    id
                 }
             }
-            """.replace('$$1', item_type)
-        ), variable_values={'nextToken': next_token, 'limit': limit})
+        }
+        """.replace('$$1', item_type))
+    while True:
+        result = client.execute(cmd, variable_values={'nextToken': next_token, 'limit': limit})
         items += result[item_type]['items']
         next_token = result[item_type]['nextToken']
         if not next_token:
