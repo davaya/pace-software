@@ -24,7 +24,7 @@ def init() -> dict:
     devs = create_devices()
     sboms = create_sboms()
     joins = create_join_table(devs, sboms)
-    return {'devs': devs, 'sboms': sboms, 'joins': joins}
+    return {'devs': len(devs), 'sboms': len(sboms), 'joins': len(joins)}
 
 
 def clear_all():
