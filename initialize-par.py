@@ -124,7 +124,7 @@ def create_sboms() -> list[str]:
 
 def create_join_table(devs: list[str], sboms: list[str]) -> list[str]:
     """
-    Create Devices-to-SBOMs join table
+    Create Devices-to-SBOMs join table by randomly assigning sboms to devices
     """
     ids = []
     count = random.choices([0, 1, 2, 3], weights=[4, 3, 2, 1], k=len(devs))
