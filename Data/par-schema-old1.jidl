@@ -75,16 +75,14 @@ FileSpecifiers = Map{1..*}
 File = Record
    1 data             Binary
 
-SBOM-Info = Map
-   1 type             Enumerated(Enum[SBOM-Content]) // SBOM type (name of standard)
-   2 format           DataFormat                  // Data (serialization) format
-   3 sid              ls:URI                      // Unique identifier or locator of the SBOM
-   4 summary          SBOM-Elements optional      // NTIA Minimumum Elements of an SBOM
-   5 content          SBOM-Content optional       // SBOM structured data
-   6 blob             Binary optional             // Uninterpreted SBOM bytes
+SBOM-Info = Map{1..*}
+   1 uri              URI optional                // Unique identifier or locator of the SBOM
+   2 summary          SBOM-Elements optional      // NTIA Minimumum Elements of an SBOM
+   3 content          SBOM-Content optional       // SBOM structured data
+   4 blob             SBOM-Blob optional          // Uninterpreted SBOM bytes
 
 SBOM-Elements = Record
-   1 supplier         String [1..*]               // Name of entity that creates, defines, and identifies components
+   1 supplier         String [1..*]               // Name(s) of entity that creates, defines, and identifies components
    2 component        String [1..*]               // Designation(s) assigned to a unit of software defined by the original supplier
    3 version          String                      // Identifier used by supplier to specify a change from a previously identified version
    4 component_ids    String [1..*]               // Other identifiers used to identify a component, or serve as a look-yp key
@@ -97,16 +95,10 @@ SBOM-Content = Choice
    2 spdx2            String                      // Placeholder for SPDX v2.x data model
    3 spdx3            String                      // Placeholder for SPDX v3 data model
 
-DataFormat = Enumerated                           // Serialization Data Formats
-   1 ttv                                          // Text Tag-Value
-   2 json                                         // JSON verbose
-   3 json-m                                       // JSON concise/minimized
-   4 json-ld                                      // JSON linked data
-   5 cbor                                         // CBOR binary
-   6 protobuf                                     // Protocol Buffers binary
-   7 xml                                          // XML
-   8 ss-csv                                       // Spreadsheet comma separated values
+SBOM-Blob = Record
+   1 format           Enumerated(Enum[SBOM-Content])
+   2 data             Binary
 
-DateTime = Integer{0..*}
+DateTime = String{pattern="^((?:(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}:\d{2}(?:\.\d+)?))(Z|[\+-]\d{2}:\d{2})?)$"} // RFC-3339 format
 
 URI = String /uri
